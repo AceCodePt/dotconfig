@@ -59,8 +59,6 @@ rm -rf lazygit
 rm -rf lazygit.tar.gz
 
 fnm install 18 
-
-LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
 ```
 
 # Install font
@@ -68,6 +66,7 @@ LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.
 https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Hack.zip
 ```
 
+# Install PNPM
 ```bash
 curl -fsSL https://get.pnpm.io/install.sh | sh -
 echo 'export PNPM_HOME="/home/sagi/.local/share/pnpm"
@@ -82,6 +81,7 @@ esac' >> ~/.zshrc
 sudo apt install i3
 ```
 
+# Install Docker
 ```bash
 sudo apt-get update
 sudo apt-get upgrade
@@ -91,4 +91,3 @@ systemctl start docker
 systemctl enable docker
 sudo chmod 666 /var/run/docker.sock
 ```
-
